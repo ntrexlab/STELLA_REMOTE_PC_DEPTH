@@ -1,0 +1,15 @@
+<launch>
+  <!-- Arguments -->
+  <arg name="open_rviz" default="true"/>
+
+  <!-- Stella -->
+  <include file="$(find stella_bringup)/launch/stella_remote.launch">
+  </include>
+
+  <!-- rviz -->
+  <group if="$(arg open_rviz)"> 
+    <node pkg="rviz" type="rviz" name="rviz" required="true"
+          args="-d $(find stella_3d_slam_pc)/rviz/stella_3d_slam.rviz"/>
+  </group>
+</launch>
+             
