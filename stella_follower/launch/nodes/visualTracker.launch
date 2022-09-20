@@ -2,14 +2,11 @@
   <node name='visual_tracker' pkg="stella_follower" type="visualTracker.py">
     <!-- color or the target in HSV color space -->
     <rosparam ns='target'>
-      upper : [0, 110, 90]
-      lower : [10, 255, 255]
+      upper : [160, 110, 90]
+      lower : [180, 255, 255]
       <!-- red -->
-      <!-- upper : [0, 110, 90] -->
-      <!-- lower : [10, 255, 255] -->
-      <!-- orange -->
-      <!-- upper : [0, 17, 211] -->
-      <!-- lower : [30, 81, 255] -->
+      <!-- upper : [160, 110, 90] -->
+      <!-- lower : [180, 255, 255] -->
     </rosparam>
     <rosparam ns='pictureDimensions'>
       <!-- Picture dimensions in pixel -->
